@@ -1,21 +1,27 @@
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Commercial from "./Commercial";
+import Header from "./Header";
+import Home from "./Home";
+import Industrial from "./Industrial";
+import Land from "./Land";
+import Residential from "./Residential";
+
 // import '../css/bootstrap.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Header />
+        <Routes>
+          <Route exact path="/" element={<Home />}></Route>
+          <Route exact path="/residential" element={<Residential />}></Route>
+          <Route exact path="/commercial" element={<Commercial />}></Route>
+          <Route exact path="/industrial" element={<Industrial />}></Route>
+          <Route exact path="/land" element={<Land />}></Route>
+        </Routes>
+      </Router>
     </div>
   );
 }
