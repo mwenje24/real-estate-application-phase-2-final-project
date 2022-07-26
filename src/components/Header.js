@@ -23,6 +23,9 @@ function Header() {
         <Link to="/commercial" className='nav-header-link'> Commercial </Link>
         <Link to="/industrial" className='nav-header-link'> Industrial </Link>
         <Link to="/land" className='nav-header-link'> Land </Link>
+        <form className='nav-header-link search-bar'>
+          <input className='form-control' type='text' name='search' placeholder='search property...'/>
+        </form>
     </div>
   )
 }
