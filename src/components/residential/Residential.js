@@ -1,5 +1,5 @@
 import React from 'react'
-import image from "../../images/residential.jpg"
+import image from "../assets/images/residential.jpg"
 
 function Residential() {
   return (

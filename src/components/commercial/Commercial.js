@@ -1,5 +1,5 @@
 import React from 'react'
-import image from "../../images/office3.jpg"
+import image from "../assets/images/office3.jpg"
 
 function Commercial() {
   return (

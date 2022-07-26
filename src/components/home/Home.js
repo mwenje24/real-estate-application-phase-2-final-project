@@ -1,5 +1,5 @@
 import React from 'react'
-import image from "../../images/landing.jpg"
+import image from "../assets/images/landing.jpg"
 
 function Home() {
   return (
