@@ -1,9 +1,11 @@
 import React from 'react'
+import image from "../assets/images/industry4.jpg"
+import Description from '../Description'
 
 function IndustrialDescription() {
   return (
     <div>
-      description
+      <Description image={image}/>
     </div>
   )
 }

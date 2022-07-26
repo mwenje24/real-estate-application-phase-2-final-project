@@ -1,11 +1,12 @@
 import React from 'react'
+import image from "../assets/images/landing.jpg"
+import Description from '../Description';
 
 function HomeDescription() {
-  return (
-    <div>
-      description
-    </div>
-  )
+
+  return(
+    <Description image={image}/>
+  );
 }
 
 export default HomeDescription

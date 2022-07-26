@@ -1,9 +1,11 @@
 import React from 'react'
+import Description from '../Description'
+import image from "../assets/images/residential.jpg"
 
 function ResidentialDescription() {
   return (
     <div>
-      description
+      <Description image={image}/>
     </div>
   )
 }
