@@ -3,8 +3,8 @@ import image from "../images/residential.jpg"
 
 function Residential() {
   return (
-    <div>
-      <span className='page-headings'>Residential Properties</span>
+    <>
+      <span className='page-headings'>Residential Spaces</span>
         <div className='popular-property row'>
           <div className='card popular-card col-4'>
             <img src={image} className="card-img-top" alt="..."/>
@@ -55,7 +55,7 @@ function Residential() {
             </div>
           </div>
         </div>
-    </div>
+    </>
   )
 }
 
