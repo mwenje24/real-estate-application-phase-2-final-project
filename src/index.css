@@ -91,10 +91,17 @@ nav-header{
     background-size: cover;
     box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, 0.25);
   }
-  .landing-page
+.landing-page
  .popular-property
   .popular-card 
   .card-body h5 span, p span{
     display: flex;
     float: right;
   }
+.landing-page
+  .popular-property
+   .popular-card 
+   .card-body h5 span button{
+    margin-left: 0.6rem;
+    height: 25px;
+   }
