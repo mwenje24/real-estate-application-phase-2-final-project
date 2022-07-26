@@ -99,7 +99,7 @@ nav-header{
   }
 .popular-property
    .popular-card 
-   .card-body h5 span button{
+   .card-body h5 span .btn{
     margin-left: 0.6rem;
     height: 25px;
    }

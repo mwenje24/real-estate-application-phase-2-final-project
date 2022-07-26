@@ -1,5 +1,7 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import image from "../assets/images/landing.jpg"
+
 
 function Home() {
   return (
@@ -16,7 +18,7 @@ function Home() {
           <div className='card popular-card col-4'>
             <img src={image} className="card-img-top" alt="..."/>
             <div className="card-body">
-              <h5 className="card-title">Card title <span>Charges<button className='btn btn-sm btn-outline-secondary disabled'>status</button></span></h5>
+              <h5 className="card-title">Card title <span>Charges<Link to="/home/description" className='btn btn-sm btn-outline-secondary'>Details</Link></span></h5>
               <p className="card-text">............Address</p>
               <p className="card-text">............Measurements <span>Bids</span></p>
             </div>
@@ -24,7 +26,7 @@ function Home() {
           <div className='card popular-card col-4'>
             <img src={image} className="card-img-top" alt="..."/>
             <div className="card-body">
-              <h5 className="card-title">Card title <span>Charges<button className='btn btn-sm btn-outline-secondary disabled'>status</button></span></h5>
+              <h5 className="card-title">Card title <span>Charges<Link to="/home/description" className='btn btn-sm btn-outline-secondary'>Details</Link></span></h5>
               <p className="card-text">............Address</p>
               <p className="card-text">............Measurements <span>Bids</span></p>
             </div>
@@ -32,7 +34,7 @@ function Home() {
           <div className='card popular-card col-4'>
             <img src={image} className="card-img-top" alt="..."/>
             <div className="card-body">
-              <h5 className="card-title">Card title <span>Charges<button className='btn btn-sm btn-outline-secondary disabled'>status</button></span></h5>
+              <h5 className="card-title">Card title <span>Charges<Link to="/home/description" className='btn btn-sm btn-outline-secondary'>Details</Link></span></h5>
               <p className="card-text">............Address</p>
               <p className="card-text">............Measurements <span>Bids</span></p>
             </div>
@@ -40,7 +42,7 @@ function Home() {
           <div className='card popular-card col-4'>
             <img src={image} className="card-img-top" alt="..."/>
             <div className="card-body">
-              <h5 className="card-title">Card title <span>Charges<button className='btn btn-sm btn-outline-secondary disabled'>status</button></span></h5>
+              <h5 className="card-title">Card title <span>Charges<Link to="/home/description" className='btn btn-sm btn-outline-secondary'>Details</Link></span></h5>
               <p className="card-text">............Address</p>
               <p className="card-text">............Measurements <span>Bids</span></p>
             </div>
@@ -48,7 +50,7 @@ function Home() {
           <div className='card popular-card col-4'>
             <img src={image} className="card-img-top" alt="..."/>
             <div className="card-body">
-              <h5 className="card-title">Card title <span>Charges<button className='btn btn-sm btn-outline-secondary disabled'>status</button></span></h5>
+              <h5 className="card-title">Card title <span>Charges<Link to="/home/description" className='btn btn-sm btn-outline-secondary'>Details</Link></span></h5>
               <p className="card-text">............Address</p>
               <p className="card-text">............Measurements <span>Bids</span></p>
             </div>
@@ -56,7 +58,7 @@ function Home() {
           <div className='card popular-card col-4'>
             <img src={image} className="card-img-top" alt="..."/>
             <div className="card-body">
-              <h5 className="card-title">Card title <span>Charges<button className='btn btn-sm btn-outline-secondary disabled'>status</button></span></h5>
+              <h5 className="card-title">Card title <span>Charges<Link to="/home/description" className='btn btn-sm btn-outline-secondary'>Details</Link></span></h5>
               <p className="card-text">............Address</p>
               <p className="card-text">............Measurements <span>Bids</span></p>
             </div>
