@@ -1,4 +1,5 @@
 import React from "react";
+import '../index.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Commercial from "./Commercial";
 import Header from "./Header";
@@ -8,10 +9,13 @@ import Land from "./Land";
 import Residential from "./Residential";
 
 // import '../css/bootstrap.css';
+// import '../css/bootstrap.map.css';
+
+// import “bootstrap/dist/bootstrap.min.css”;
 
 function App() {
   return (
-    <div className="App">
+    <div className="container-md">
       <Router>
         <Header />
         <Routes>
