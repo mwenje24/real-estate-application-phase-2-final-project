@@ -1,5 +1,5 @@
 import React from 'react'
-import image from "../images/industry4.jpg"
+import image from "../../images/industry4.jpg"
 
 function Industrial() {
   return (

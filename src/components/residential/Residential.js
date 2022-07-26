@@ -1,10 +1,10 @@
 import React from 'react'
-import image from "../images/land2.jpeg"
+import image from "../../images/residential.jpg"
 
-function Land() {
+function Residential() {
   return (
     <>
-      <span className='page-headings'>land Spaces</span>
+      <span className='page-headings'>Residential Spaces</span>
         <div className='popular-property row'>
           <div className='card popular-card col-4'>
             <img src={image} className="card-img-top" alt="..."/>
@@ -59,4 +59,4 @@ function Land() {
   )
 }
 
-export default Land
+export default Residential

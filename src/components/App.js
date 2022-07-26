@@ -1,12 +1,12 @@
 import React from "react";
 import '../index.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Commercial from "./Commercial";
+import Commercial from "./commercial/Commercial";
 import Header from "./Header";
-import Home from "./Home";
-import Industrial from "./Industrial";
-import Land from "./Land";
-import Residential from "./Residential";
+import Home from "./home/Home";
+import Industrial from "./industrial/Industrial";
+import Land from "./land/Land";
+import Residential from "./residential/Residential";
 
 // import '../css/bootstrap.css';
 // import '../css/bootstrap.map.css';
