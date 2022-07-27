@@ -17,7 +17,7 @@ function Header() {
   return (
     <div className='sticky-top nav-header bg-light'>
         {/* <Link to="/" style={linkStyle} className='nav-lin'> Home </Link> */}
-        <Link to="/" className='nav-header-link'> <img src={logo} alt='logo'/> </Link>
+        <Link to="/admin" className='nav-header-link'> <img src={logo} alt='logo'/> </Link>
         <Link to="/" className='nav-header-link'> Home </Link>
         <Link to="/residential" className='nav-header-link'> Residential </Link>
         <Link to="/commercial" className='nav-header-link'> Commercial </Link>

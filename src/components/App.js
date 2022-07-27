@@ -12,6 +12,8 @@ import CommercialDescription from "./commercial/CommercialDescription";
 import ResidentialDescription from "./residential/ResidentialDescription";
 import IndustrialDescription from "./industrial/IndustrialDescription";
 import LandDescription from "./land/LandDescription";
+import Login from "./admin/Login";
+import Admin from "./admin/Admin";
 
 // import '../css/bootstrap.css';
 // import '../css/bootstrap.map.css';
@@ -24,6 +26,8 @@ function App() {
       <Router>
         <Header />
         <Routes>
+          <Route exact path="/login" element={<Login />}></Route>
+          <Route exact path="/admin" element={<Admin />}></Route>
           <Route exact path="/" element={<Home />}></Route>
           <Route exact path="/home/description" element={<HomeDescription />}></Route>
           <Route exact path="/residential" element={<Residential />}></Route>
