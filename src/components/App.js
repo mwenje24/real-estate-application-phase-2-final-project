@@ -14,7 +14,7 @@ import IndustrialDescription from "./industrial/IndustrialDescription";
 import LandDescription from "./land/LandDescription";
 import Login from "./admin/Login";
 import Admin from "./admin/Admin";
-
+import AddProperty from "./admin/AddProperty";
 
 function App() {
   return (
@@ -24,6 +24,7 @@ function App() {
         <Routes>
           <Route exact path="/login" element={<Login />}></Route>
           <Route exact path="/admin" element={<Admin />}></Route>
+          <Route exact path="/addproperty" element={<AddProperty />}></Route>
           <Route exact path="/" element={<Home />}></Route>
           <Route exact path="/home/description" element={<HomeDescription />}></Route>
           <Route exact path="/residential" element={<Residential />}></Route>

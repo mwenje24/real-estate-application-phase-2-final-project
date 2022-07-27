@@ -213,6 +213,12 @@ nav-header{
     .form-display{
       padding-top: 40%;
     }
+    .summary{
+      width: 100%;
+    }
+    .summary table{
+      font-size: 12px;
+    }
   }
   @media screen and (max-width: 480px) {
     body{
@@ -258,6 +264,12 @@ nav-header{
     .modal-content{
       width: 90%;
     }
+    .summary{
+      width: 100%;
+    }
+    .summary table{
+      font-size: 12px;
+    }
   }
 .main-image, .more-images{
   text-align: center;
@@ -275,6 +287,18 @@ nav-header{
   padding: 0.5rem 1.2rem;
 }
 
+.newItem {
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  padding-top: 40px;
+}
+.itemform-content{
+  width: 90%;
+  margin: 0% auto 15% auto;
+}
 
 /* admin login */
 .log-container{

@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import Cart from '../Cart'
+import {useNavigate} from 'react-router-dom';
 import image from "../assets/images/landing.jpg"
 
 function Admin() {
@@ -7,11 +7,18 @@ function Admin() {
       display: "flex",
       float: "right"
     };
+
+    const navigate = useNavigate();
+
+    function handleAddPropertyForm(){
+        navigate('/addproperty');
+    }
   return (
     <>
       <span className='page-headings'>Properties Summary</span>
+      <button className='btn btn-sm btn-secondary mx-5 px-5' onClick={handleAddPropertyForm}>Add Poperty</button>
       <div className='row'>
-        <div className='col-4'>
+        <div className='col-4 summary'>
         <div className='card popular-card col-12 mt-3'>
             <img src={image} className="card-img-top" alt="..."/>
             <div className="card-body">
@@ -21,9 +28,9 @@ function Admin() {
             </div>
         </div>
         </div>
-        <div className='col-8'>
+        <div className='col-8 mt-2 summary'>
         <span className='page-headings px-5'>Bids list</span>
-        <table class="table table-striped mt-3 table-hover">
+        <table className="table table-striped mt-3 table-hover">
           <thead>
             <tr>
               <th></th>
@@ -60,7 +67,7 @@ function Admin() {
         </div>
       </div>
       <div className='row'>
-        <div className='col-4'>
+        <div className='col-4 summary'>
         <div className='card popular-card col-12 mt-3'>
             <img src={image} className="card-img-top" alt="..."/>
             <div className="card-body">
@@ -70,9 +77,9 @@ function Admin() {
             </div>
         </div>
         </div>
-        <div className='col-8'>
+        <div className='col-8 mt-2 summary'>
         <span className='page-headings px-5'>Bids list</span>
-        <table class="table table-striped mt-3 table-hover">
+        <table className="table table-striped mt-3 table-hover">
           <thead>
             <tr>
               <th></th>
