@@ -219,6 +219,9 @@ nav-header{
     .summary table{
       font-size: 12px;
     }
+    .modal form{
+      margin: 30% auto 15% auto;
+    }
   }
   @media screen and (max-width: 480px) {
     body{
@@ -261,8 +264,8 @@ nav-header{
     .form-display form .form-content .bid input{
       width: 5rem;
     }
-    .modal-content{
-      width: 90%;
+    .modal form{
+      margin: 30% auto 15% auto;
     }
     .summary{
       width: 100%;
@@ -333,7 +336,7 @@ img.avatar {
   background-color: #fefefe;
   margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
   border: 1px solid #888;
-  width: 50%; /* Could be more or less, depending on screen size */
+  width: 80%; /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button (x) */
