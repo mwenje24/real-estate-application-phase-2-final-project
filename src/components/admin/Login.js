@@ -1,6 +1,6 @@
 import React from 'react'
 import {useNavigate} from 'react-router-dom';
-import image from "../assets/images/user.png"
+import image from "../../assets/images/user.png"
 
 function Login() {
     const navigate = useNavigate();

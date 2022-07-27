@@ -1,6 +1,6 @@
 import React from 'react'
 import Description from '../Description'
-import image from "../assets/images/office3.jpg"
+import image from "../../assets/images/office3.jpg"
 
 function CommercialDescription() {
   return (

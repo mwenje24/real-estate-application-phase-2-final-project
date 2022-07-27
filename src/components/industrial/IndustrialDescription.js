@@ -1,5 +1,5 @@
 import React from 'react'
-import image from "../assets/images/industry4.jpg"
+import image from "../../assets/images/industry4.jpg"
 import Description from '../Description'
 
 function IndustrialDescription() {

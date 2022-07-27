@@ -50,7 +50,7 @@ nav-header{
 .landing-page .welcome-image{
   width: 100%;
   height: 35vh;
-  background-image: url('./components/assets/images/house4.jpg');
+  background-image: url('./assets/images/house4.jpg');
   background-size: cover;
   border-radius: 5px;
   opacity: 0.8;

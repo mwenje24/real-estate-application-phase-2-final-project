@@ -27,6 +27,10 @@ function Description({image}) {
                           <label>Phone Number</label><br/>
                           <input id="text"  name="phone" type="password" placeholder="Enter Your Phone Number"/>
                       </div>
+                      <div className="form-details">
+                          <label>Offer</label><br/>
+                          <input id="text"  name="offer" type="password" placeholder="Enter Your Offer"/>
+                      </div>
                       <div className='bid'><input className='btn btn-sm btn-dark' type="submit" value="Bid"/></div>
                   </div>
               </form>

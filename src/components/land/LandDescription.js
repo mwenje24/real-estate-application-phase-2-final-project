@@ -1,5 +1,5 @@
 import React from 'react'
-import image from "../assets/images/land2.jpeg"
+import image from "../../assets/images/land2.jpeg"
 import Description from '../Description'
 
 function LandDescription() {

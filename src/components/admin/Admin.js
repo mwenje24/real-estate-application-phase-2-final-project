@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import {useNavigate} from 'react-router-dom';
-import image from "../assets/images/landing.jpg"
+import image from "../../assets/images/landing.jpg"
 
 function Admin() {
     const flex = {

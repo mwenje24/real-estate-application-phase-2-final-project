@@ -1,6 +1,6 @@
 import React from 'react'
 import Description from '../Description'
-import image from "../assets/images/residential.jpg"
+import image from "../../assets/images/residential.jpg"
 
 function ResidentialDescription() {
   return (
