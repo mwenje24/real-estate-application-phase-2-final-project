@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/real-estate-application-phase-2-final-project/static/css/main.aebbdb7d.css",
+    "main.js": "/real-estate-application-phase-2-final-project/static/js/main.b76a9cb9.js",
+    "static/media/landing.jpg": "/real-estate-application-phase-2-final-project/static/media/landing.954cef8b99e482c553c9.jpg",
+    "static/media/house4.jpg": "/real-estate-application-phase-2-final-project/static/media/house4.9f1321eaea52f09b349c.jpg",
+    "static/media/logo.png": "/real-estate-application-phase-2-final-project/static/media/logo.44f3779b2e6e149306ae.png",
+    "static/media/residential.jpg": "/real-estate-application-phase-2-final-project/static/media/residential.d42d110fce6f1b29f3bc.jpg",
+    "static/media/office3.jpg": "/real-estate-application-phase-2-final-project/static/media/office3.774ca4e8d442ff00d7bf.jpg",
+    "static/media/industry4.jpg": "/real-estate-application-phase-2-final-project/static/media/industry4.77761c415a6d0722cfaf.jpg",
+    "static/media/user.png": "/real-estate-application-phase-2-final-project/static/media/user.557587208eb9e232f2ca.png",
+    "index.html": "/real-estate-application-phase-2-final-project/index.html",
+    "main.aebbdb7d.css.map": "/real-estate-application-phase-2-final-project/static/css/main.aebbdb7d.css.map",
+    "main.b76a9cb9.js.map": "/real-estate-application-phase-2-final-project/static/js/main.b76a9cb9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aebbdb7d.css",
+    "static/js/main.b76a9cb9.js"
+  ]
+}
