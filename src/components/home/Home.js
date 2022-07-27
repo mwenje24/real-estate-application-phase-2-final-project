@@ -1,9 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import image from "../assets/images/landing.jpg"
+import Cart from '../Cart'
 
 
 function Home() {
+
+  let link = <Link to="/home/description" className='btn btn-sm btn-outline-secondary'>Details</Link>
   return (
     <>
       <div className='landing-page'>
@@ -15,54 +18,12 @@ function Home() {
         </div>
         <span className='page-headings'>Popular Properties</span>
         <div className='popular-property row'>
-          <div className='card popular-card col-4'>
-            <img src={image} className="card-img-top" alt="..."/>
-            <div className="card-body">
-              <h5 className="card-title">Card title <span>Charges<Link to="/home/description" className='btn btn-sm btn-outline-secondary'>Details</Link></span></h5>
-              <p className="card-text">............Address</p>
-              <p className="card-text">............Measurements <span>Bids</span></p>
-            </div>
-          </div>
-          <div className='card popular-card col-4'>
-            <img src={image} className="card-img-top" alt="..."/>
-            <div className="card-body">
-              <h5 className="card-title">Card title <span>Charges<Link to="/home/description" className='btn btn-sm btn-outline-secondary'>Details</Link></span></h5>
-              <p className="card-text">............Address</p>
-              <p className="card-text">............Measurements <span>Bids</span></p>
-            </div>
-          </div>
-          <div className='card popular-card col-4'>
-            <img src={image} className="card-img-top" alt="..."/>
-            <div className="card-body">
-              <h5 className="card-title">Card title <span>Charges<Link to="/home/description" className='btn btn-sm btn-outline-secondary'>Details</Link></span></h5>
-              <p className="card-text">............Address</p>
-              <p className="card-text">............Measurements <span>Bids</span></p>
-            </div>
-          </div>
-          <div className='card popular-card col-4'>
-            <img src={image} className="card-img-top" alt="..."/>
-            <div className="card-body">
-              <h5 className="card-title">Card title <span>Charges<Link to="/home/description" className='btn btn-sm btn-outline-secondary'>Details</Link></span></h5>
-              <p className="card-text">............Address</p>
-              <p className="card-text">............Measurements <span>Bids</span></p>
-            </div>
-          </div>
-          <div className='card popular-card col-4'>
-            <img src={image} className="card-img-top" alt="..."/>
-            <div className="card-body">
-              <h5 className="card-title">Card title <span>Charges<Link to="/home/description" className='btn btn-sm btn-outline-secondary'>Details</Link></span></h5>
-              <p className="card-text">............Address</p>
-              <p className="card-text">............Measurements <span>Bids</span></p>
-            </div>
-          </div>
-          <div className='card popular-card col-4'>
-            <img src={image} className="card-img-top" alt="..."/>
-            <div className="card-body">
-              <h5 className="card-title">Card title <span>Charges<Link to="/home/description" className='btn btn-sm btn-outline-secondary'>Details</Link></span></h5>
-              <p className="card-text">............Address</p>
-              <p className="card-text">............Measurements <span>Bids</span></p>
-            </div>
-          </div>
+          <Cart link={link} image={image}/>
+          <Cart link={link} image={image}/>
+          <Cart link={link} image={image}/>
+          <Cart link={link} image={image}/>
+          <Cart link={link} image={image}/>
+          <Cart link={link} image={image}/>
         </div>
       </div>
     </>
