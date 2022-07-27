@@ -255,6 +255,9 @@ nav-header{
     .form-display form .form-content .bid input{
       width: 5rem;
     }
+    .modal-content{
+      width: 90%;
+    }
   }
 .main-image, .more-images{
   text-align: center;

@@ -15,10 +15,6 @@ import LandDescription from "./land/LandDescription";
 import Login from "./admin/Login";
 import Admin from "./admin/Admin";
 
-// import '../css/bootstrap.css';
-// import '../css/bootstrap.map.css';
-
-// import “bootstrap/dist/bootstrap.min.css”;
 
 function App() {
   return (

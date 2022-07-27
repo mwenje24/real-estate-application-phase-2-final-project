@@ -29,7 +29,8 @@
                 "offer" : 900
             }
         ]
-        }
+        },
+    "status": "available"
     },
     {
     "id": 2,
@@ -55,11 +56,12 @@
             {
                 "id":2,
                 "name": "Abraham Zigi",
-                "email": "ibr3892651",
+                "email": "ibra@gmail.com",
                 "offer" : 90000
             }
         ]
-        }
+        },
+    "status": "sold"
     }
 ]
 }
