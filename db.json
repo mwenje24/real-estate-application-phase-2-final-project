@@ -1,0 +1,65 @@
+{
+"property": [
+    {
+    "id": 1,
+    "ownername": "Rickson Holdings",
+    "owneremail": "rickso@holdings.com",
+    "ownerphone": "0754898963",
+    "category": "commercial",
+    "transaction": "rental",
+    "charges": 1000,
+    "address": "Rickson Plaza, Muindi Mbingu Streat, Nairobi",
+    "Size": "80 x 90 feet",
+    "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore",
+    "images":[],
+    "bids": {
+        "buyer":[
+            {
+                "id":1,
+                "name": "Andrew Lincoln",
+                "email": "andre@gmail.com",
+                "phone": "0796325481",
+                "offer" : 800
+            },
+            {
+                "id":2,
+                "name": "Sam Wein",
+                "email": "sam@gmail.com",
+                "phone": "0796546651",
+                "offer" : 900
+            }
+        ]
+        }
+    },
+    {
+    "id": 2,
+    "ownername": "Fatu Retirement Homes",
+    "owneremail": "fatu@homes.com",
+    "ownerphone": "0755558882",
+    "category": "residential",
+    "transaction": "purchase",
+    "charges": 100000,
+    "address": "Nairobi Metr, Karen, Nairobi",
+    "Size": "2.4 Acres",
+    "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore",
+    "images":[],
+    "bids": {
+        "buyer":[
+            {
+                "id":1,
+                "name": "Jane Sing",
+                "email": "sing@gmail.com",
+                "phone": "0796661333",
+                "offer" : 68500
+            },
+            {
+                "id":2,
+                "name": "Abraham Zigi",
+                "email": "ibr3892651",
+                "offer" : 90000
+            }
+        ]
+        }
+    }
+]
+}

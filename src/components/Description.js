@@ -31,7 +31,7 @@ function Description({image}) {
                   </div>
               </form>
           </div>
-          <span className='page-headings'>Popular Properties<button onClick={handleOpenForm} className='btn btn-sm btn-outline-secondary mb-2'>Place a Bid</button></span>
+          <span className='page-headings'>Space Description<button onClick={handleOpenForm} className='btn btn-sm btn-outline-secondary mb-2'>Place a Bid</button></span>
           <div className='main-image'>
             <img src={image} className="card-img-top" alt="..."/>
           </div>
