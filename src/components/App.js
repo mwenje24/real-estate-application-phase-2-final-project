@@ -26,15 +26,15 @@ function App() {
           <Route exact path="/admin" element={<Admin />}></Route>
           <Route exact path="/addproperty" element={<AddProperty />}></Route>
           <Route exact path="/" element={<Home />}></Route>
-          <Route exact path="/home/description" element={<HomeDescription />}></Route>
+          <Route exact path="/home/description/:propertyId" element={<HomeDescription />}></Route>
           <Route exact path="/residential" element={<Residential />}></Route>
-          <Route exact path="/residential/description" element={<ResidentialDescription />}></Route>
+          <Route exact path="/residential/description/:propertyId" element={<ResidentialDescription />}></Route>
           <Route exact path="/commercial" element={<Commercial />}></Route>
-          <Route exact path="/commercial/description" element={<CommercialDescription />}></Route>
+          <Route exact path="/commercial/description/:propertyId" element={<CommercialDescription />}></Route>
           <Route exact path="/industrial" element={<Industrial />}></Route>
-          <Route exact path="/industrial/description" element={<IndustrialDescription />}></Route>
+          <Route exact path="/industrial/description/:propertyId" element={<IndustrialDescription />}></Route>
           <Route exact path="/land" element={<Land />}></Route>
-          <Route exact path="/land/description" element={<LandDescription />}></Route>
+          <Route exact path="/land/description/:propertyId" element={<LandDescription />}></Route>
         </Routes>
       </Router>
     </div>

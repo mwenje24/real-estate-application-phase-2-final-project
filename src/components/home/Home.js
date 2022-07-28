@@ -15,7 +15,7 @@ function Home() {
   }, []);
 
 
-  let link = <Link to="/home/description" className='btn btn-sm btn-outline-secondary'>Details</Link>
+  // let link = <Link to="/home/description" className='btn btn-sm btn-outline-secondary'>Details</Link>
   return (
     <>
       <div className='landing-page'>
@@ -27,8 +27,14 @@ function Home() {
         </div>
         <span className='page-headings'>Popular Properties</span>
         <div className='popular-property row'>
-          {properties.map((popular) => (
-            <Cart key={popular.id} link={link} image={popular.images[0]} transaction={popular.transaction} address={popular.address} charges={popular.charges} size={popular.size}/>
+        {properties.map((popular) => (
+            <Cart key={popular.id} 
+              link={<Link to={"/home/description/"+ popular.id} className='btn btn-sm btn-outline-secondary'>Details</Link>} 
+              image={popular.images[0]} 
+              transaction={popular.transaction} 
+              address={popular.address} 
+              charges={popular.charges} 
+              size={popular.size}/>
           ))}
         </div>
       </div>
