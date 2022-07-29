@@ -16,7 +16,7 @@ This project has been hosted in the git hub repository (https://github.com/mwenj
 
 ## Available Scripts
 
-languages used to create .his application are:
+languages used to create this application are:
 1. Javascript
 2. HTML and CSS
 3. db json server
