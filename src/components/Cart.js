@@ -9,7 +9,7 @@ function Cart({image, link, transaction, address, size, charges}) {
             <div className="card-body">
               <h5 className="card-title">{transaction} <span>$ {charges}{link}</span></h5>
               <h6 className="card-text">{address}</h6>
-              <h6 className="card-text">{size}<span>Bids</span></h6>
+              <h6 className="card-text">{size}<span>Bids: 3</span></h6>
             </div>
         </div>
     </>

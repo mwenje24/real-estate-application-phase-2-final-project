@@ -21,7 +21,7 @@ function Commercial() {
         {properties.map((popular) => (
             <Cart key={popular.id} 
               link={<Link to={"/commercial/description/"+ popular.id} className='btn btn-sm btn-outline-secondary'>Details</Link>} 
-              image={popular.images[0]} 
+              image={image} 
               transaction={popular.transaction} 
               address={popular.address} 
               charges={popular.charges} 
