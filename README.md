@@ -1,11 +1,11 @@
 # Getting Started with Create React App
-# author 
+## author 
 Mwenje David
 
-# email
+## email
 mwenje24@gmail.com
 
-# project Name
+## project Name
 Reale Estate Application
 
 ## Description
@@ -19,7 +19,7 @@ This project has been hosted in the git hub repository (https://github.com/mwenj
 languages used to create .his application are:
 1. Javascript
 2. HTML and CSS
-3. bd json server
+3. db json server
 
 
 ### Deployment
