@@ -1,4 +1,5 @@
 import React from 'react'
+// import img from '../../assets/images';
 
 function Cart({image, link, transaction, address, size, charges}) {
   return (

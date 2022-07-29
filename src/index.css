@@ -95,7 +95,7 @@ nav-header{
 .form-display form {
     width: 80%;
     margin: auto;
-    height: 65vh;
+    height: 70vh;
     background-color:rgb(243, 241, 241);
     border-radius: 10px;
     overflow: hidden;
@@ -122,7 +122,7 @@ nav-header{
     font-size: 18px;
 }
 .form-display form .form-content .form-details{
-    padding: 10px;
+    padding:3px 10px;
 }
 .form-display form .form-content .form-details input[type=text], textarea, input[type=password]{
     width: 100%;

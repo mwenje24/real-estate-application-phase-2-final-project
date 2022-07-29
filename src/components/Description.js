@@ -1,4 +1,5 @@
-import React from 'react'
+import React, {useState} from 'react'
+import { useParams } from "react-router-dom";
 
 function Description({image1, image2, image3, ownername, transaction, charges, address, size, description}) {
     function handleOpenForm(){
@@ -7,29 +8,88 @@ function Description({image1, image2, image3, ownername, transaction, charges, a
       function HandleCloseForm(){
         document.getElementById("bid-form").style.display="none";
       }
+
+      const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        phone: "",
+        offer: "",
+        propertyid: "",
+      });
+
+      let {propertyId} = useParams()
+
+      function handleChange(event) {
+        setFormData({
+          ...formData,
+          [event.target.name]: event.target.value,
+        });
+      }
+
+      function handleSubmit(event) {
+        event.preventDefault();
+        const formBid = {
+          name: formData.name,
+          email:formData.email,
+          phone:formData.phone,
+          propertyid: parseInt(propertyId),
+          offer:formData.offer
+        };
+        // fetch(`http://localhost:4000/property/${propertyId}/bids/buyer`, {
+          fetch(`http://localhost:4000/bids`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formBid),
+        })
+        // formData.name = ''
+        // formData.email = ''
+        // formData.phone = ''
+        // formData.offer = ''
+      }
     
       return (
         <div className='mt-3'>
           <div className="form-display" id="bid-form">
-              <form method="" id="contactMessage">
+              <form id="contactMessage" onSubmit={handleSubmit}>
                   <div className="form-content">
                   <span className='page-headings'>Fill in your contact details</span>
                       <button className="btn btn-sm button" onClick={HandleCloseForm}>x</button>
                       <div className="form-details">
                           <label>Full Name</label><br/>
-                          <input id="username" type="text" name="name" placeholder="Enter Your Full Names"/>
+                          <input id="username" 
+                            type="text" name="name" 
+                            value={formData.name}
+                            onChange={handleChange}
+                            placeholder="Enter Your Full Names"/>
                       </div>
                       <div className="form-details">
                           <label>Email</label><br />
-                          <input id="email"  name="email" type="text" placeholder="Enter Your Email"/>
+                          <input id="email"  
+                            name="email" 
+                            type="text" 
+                            value={formData.email}
+                            onChange={handleChange}
+                            placeholder="Enter Your Email"/>
                       </div>
                       <div className="form-details">
                           <label>Phone Number</label><br/>
-                          <input id="text"  name="phone" type="password" placeholder="Enter Your Phone Number"/>
+                          <input id="text" 
+                            name="phone" 
+                            type="text"
+                            value={formData.phone}
+                            onChange={handleChange} 
+                            placeholder="Enter Your Phone Number"/>
                       </div>
                       <div className="form-details">
                           <label>Offer</label><br/>
-                          <input id="text"  name="offer" type="password" placeholder="Enter Your Offer"/>
+                          <input id="text" 
+                            name="offer" 
+                            type="text" 
+                            value={formData.offer}
+                            onChange={handleChange}
+                            placeholder="Enter Your Offer"/>
                       </div>
                       <div className='bid'><input className='btn btn-sm btn-dark' type="submit" value="Bid"/></div>
                   </div>
