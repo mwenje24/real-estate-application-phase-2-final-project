@@ -5,36 +5,31 @@ function Description({image, ownername, transaction, charges, address, size, des
     function handleOpenForm(){
         document.getElementById("bid-form").style.display="block";
       }
-      function HandleCloseForm(){
-        document.getElementById("bid-form").style.display="none";
+      function HandleCloseForm(e){
+        document.getElementById("bid-form").style.display="none"
+        e.preventDefault();
+      }
+      function HandleClsForm(e){
+        document.getElementById("bid-form").style.display="none"
       }
 
-      const [formData, setFormData] = useState({
-        name: "",
-        email: "",
-        phone: "",
-        offer: "",
-        propertyid: "",
-      });
+      const [name, setName] = useState('');
+      const [email, setEmail] = useState('');
+      const [phone, setPhone] = useState('');
+      const [offer, setOffer] = useState('');
 
       let {propertyId} = useParams()
-
-      function handleChange(event) {
-        setFormData({
-          ...formData,
-          [event.target.name]: event.target.value,
-        });
-      }
 
       function handleSubmit(event) {
         event.preventDefault();
         const formBid = {
-          name: formData.name,
-          email:formData.email,
-          phone:formData.phone,
+          name: name,
+          email:email,
+          phone:phone,
           propertyid: parseInt(propertyId),
-          offer:formData.offer
+          offer:offer
         };
+        // console.log(formBid)
         // fetch(`http://localhost:4000/property/${propertyId}/bids/buyer`, {
           fetch(`http://localhost:4000/bids`, {
           method: "POST",
@@ -43,10 +38,13 @@ function Description({image, ownername, transaction, charges, address, size, des
           },
           body: JSON.stringify(formBid),
         })
-        // formData.name = ''
-        // formData.email = ''
-        // formData.phone = ''
-        // formData.offer = ''
+        .then(() => setName(''))
+        .then(() => setEmail(''))
+        .then(() => setPhone(''))
+        .then(() => setOffer(''))
+
+        HandleClsForm()
+        
       }
     
       return (
@@ -60,36 +58,36 @@ function Description({image, ownername, transaction, charges, address, size, des
                           <label>Full Name</label><br/>
                           <input id="username" 
                             type="text" name="name" 
-                            value={formData.name}
-                            onChange={handleChange}
-                            placeholder="Enter Your Full Names"/>
+                            value={name}
+                            onChange={(e) => setName(e.target.value)}
+                            placeholder="Enter Your Full Names" required/>
                       </div>
                       <div className="form-details">
                           <label>Email</label><br />
                           <input id="email"  
                             name="email" 
                             type="text" 
-                            value={formData.email}
-                            onChange={handleChange}
-                            placeholder="Enter Your Email"/>
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                            placeholder="Enter Your Email" required/>
                       </div>
                       <div className="form-details">
                           <label>Phone Number</label><br/>
                           <input id="text" 
                             name="phone" 
                             type="text"
-                            value={formData.phone}
-                            onChange={handleChange} 
-                            placeholder="Enter Your Phone Number"/>
+                            value={phone}
+                            onChange={(e) => setPhone(e.target.value)} 
+                            placeholder="Enter Your Phone Number" required/>
                       </div>
                       <div className="form-details">
                           <label>Offer</label><br/>
                           <input id="text" 
                             name="offer" 
                             type="text" 
-                            value={formData.offer}
-                            onChange={handleChange}
-                            placeholder="Enter Your Offer"/>
+                            value={offer}
+                            onChange={(e) => setOffer(e.target.value)}
+                            placeholder="Enter Your Offer" required/>
                       </div>
                       <div className='bid'><input className='btn btn-sm btn-dark' type="submit" value="Bid"/></div>
                   </div>
