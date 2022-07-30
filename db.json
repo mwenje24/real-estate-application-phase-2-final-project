@@ -33,7 +33,7 @@
       "owneremail": "inuka@mail.com",
       "ownerphone": "0736985214",
       "category": "land",
-      "transaction": "Purchase",
+      "transaction": "purchase",
       "charges": "6000",
       "address": "Machakos, Mwatate",
       "size": "2 acres",
@@ -41,6 +41,76 @@
       "status": "available",
       "image": "https://galaxyventuresproperties.com/wp-content/uploads/2020/01/Plot-for-sale-in-Kibabii-Bungoma-4-870x420.jpg",
       "id": 3
+    },
+    {
+      "id": 4,
+      "ownername": "Rickson Holdings",
+      "owneremail": "rickso@holdings.com",
+      "ownerphone": "0754898963",
+      "category": "industrial",
+      "transaction": "purchase",
+      "charges": 20000,
+      "address": "P. O Box 121, Tatu City",
+      "size": "100 x 90 feet",
+      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore",
+      "image": "https://media.bizj.us/view/img/11668528/700-ramona*750xx2016-1134-0-189.jpg",
+      "status": "sold"
+    },
+    {
+      "id": 5,
+      "ownername": "Rickson Holdings",
+      "owneremail": "rickso@holdings.com",
+      "ownerphone": "0754898963",
+      "category": "industrial",
+      "transaction": "lease",
+      "charges": 5000,
+      "address": "Duruma, Sunguli lane, Wajir",
+      "size": "100 x 90 feet",
+      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore",
+      "image": "https://images1.loopnet.com/i2/bLJCoYbFNv9XpQpXjppy19ZLQFZyRmCxYz7tWELGDlk/116/image.jpg",
+      "status": "available"
+    },
+    {
+      "id": 6,
+      "ownername": "Fatu Retirement Homes",
+      "owneremail": "fatu@homes.com",
+      "ownerphone": "0755522110",
+      "category": "residential",
+      "transaction": "lease",
+      "charges": 6000,
+      "address": "Thika Road, Juja, Nairobi",
+      "size": "0.4 Acres",
+      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore",
+      "image": "https://www.lasvegasluxuryresidences.com/wp-content/uploads/2017/01/861vegasview-100.jpg",
+      "status": "available"
+    },
+    {
+      "ownername": "Inuka Homes",
+      "owneremail": "inuka@mail.com",
+      "ownerphone": "0736985214",
+      "category": "residential",
+      "transaction": "rent",
+      "charges": "6000",
+      "address": "Nakuru, Fendy Homes",
+      "size": "3 Bedroom Apartments",
+      "description": "sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam",
+      "status": "available",
+      "image": "https://rentpath-res.cloudinary.com/w_400,h_250,t_rp,cs_tinysrgb,fl_force_strip,c_fill,q_auto:low,dpr_1.0/e_unsharp_mask:50/cf403c9e08bfa87591398a4b9c4dceb9",
+      "id": 7
+    },
+    {
+      "id": 8,
+      "ownername": "Rickson Holdings",
+      "owneremail": "rickso@holdings.com",
+      "ownerphone": "0754898963",
+      "category": "commercial",
+      "transaction": "lease",
+      "charges": 7800,
+      "address": "Dulu Plaza, Moi Avenue, Nakuru",
+      "size": "45 x 120 feet",
+      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore",
+      "image": "https://officefreedom-bcdata-prod.s3.eu-west-2.amazonaws.com/images/photo-8281-4.jpg?mode=pad&width=330&height=220",
+      "status": "available"
     }
   ],
   "bids": [
@@ -75,6 +145,14 @@
       "email": "ibra@gmail.com",
       "phone": "0796661333",
       "offer": 90000
+    },
+    {
+      "name": "",
+      "email": "",
+      "phone": "",
+      "propertyid": 5,
+      "offer": "",
+      "id": 5
     }
   ]
 }

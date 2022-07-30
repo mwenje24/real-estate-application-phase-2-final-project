@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import { useParams } from "react-router-dom";
 
-function Description({image, ownername, transaction, charges, address, size, description}) {
+function Description({image, ownername, transaction, charges, address, size, description, status}) {
     function handleOpenForm(){
         document.getElementById("bid-form").style.display="block";
       }
@@ -95,7 +95,7 @@ function Description({image, ownername, transaction, charges, address, size, des
                   </div>
               </form>
           </div>
-          <span className='page-headings'>Space Description<button onClick={handleOpenForm} className='btn btn-sm btn-outline-secondary mb-2'>Place a Bid</button></span>
+          <span className='page-headings'>Space Description{status == 'available' ? <button onClick={handleOpenForm} className='btn btn-sm btn-outline-secondary mb-2'>Place a Bid</button> : ''}</span>
           <div className='main-image mt-5'>
             <img src={image} className="card-img-top" alt="..."/>
           </div>

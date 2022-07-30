@@ -22,6 +22,7 @@ function IndustrialDescription() {
        address={properties.address}
        size={properties.size}
        description={properties.description}
+       status={properties.status}
        />
     </div>
   )

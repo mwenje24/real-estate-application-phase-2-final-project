@@ -4,6 +4,10 @@ import image from "../../assets/images/landing.jpg"
 import Description from '../Description';
 
 function HomeDescription() {
+  // const flex = {
+  //   display: "flex",
+  //   float: "right"
+  // };
   let {propertyId} = useParams()
   const [properties, setproperties] = useState([]);
 
@@ -22,6 +26,7 @@ function HomeDescription() {
        address={properties.address}
        size={properties.size}
        description={properties.description}
+        status={properties.status}
        />
     </div>
   )

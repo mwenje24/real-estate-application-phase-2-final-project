@@ -29,7 +29,8 @@ function Commercial() {
               transaction={popular.transaction} 
               address={popular.address} 
               charges={popular.charges} 
-              size={popular.size}/>
+              size={popular.size}
+              status={popular.status}/>
           ))}
         </div>
     </>

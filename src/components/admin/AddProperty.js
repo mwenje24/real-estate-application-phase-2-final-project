@@ -100,19 +100,19 @@ function AddProperty() {
                 value = {formData.category}
                 onChange={handleChange} 
                 name="category">
-                <option>Residential</option>
-                <option>Commercial</option>
-                <option>Industrial</option>
-                <option>Land</option>
+                <option>residential</option>
+                <option>commercial</option>
+                <option>industrial</option>
+                <option>land</option>
             </select>
             <label className='form-label'><b>Transaction type</b></label>
             <select className="form-control form-select form-select-sm mb-3" 
                 value = {formData.transaction}
                 onChange={handleChange}
                 name="transaction">
-                <option>Rental</option>
-                <option>Lease</option>
-                <option>Purchase</option>
+                <option>rental</option>
+                <option>lease</option>
+                <option>purchase</option>
             </select>
             <label className='form-label'><b>Charges</b></label>
             <input className="form-control"
