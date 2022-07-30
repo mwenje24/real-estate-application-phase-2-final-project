@@ -153,6 +153,14 @@
       "propertyid": 1,
       "offer": "900",
       "id": 5
+    },
+    {
+      "name": "mwenje David",
+      "email": "mwenje24@gmail.com",
+      "phone": "+254 747532984",
+      "propertyid": 5,
+      "offer": "4000",
+      "id": 6
     }
   ]
 }

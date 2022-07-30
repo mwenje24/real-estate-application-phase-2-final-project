@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import {useNavigate} from 'react-router-dom';
 import image from "../../assets/images/landing.jpg"
 import image2 from "../../assets/images/land2.jpeg"
@@ -14,6 +14,14 @@ function Admin() {
     function handleAddPropertyForm(){
         navigate('/addproperty');
     }
+
+  const [properties, setproperties] = useState([]);
+
+  useEffect(() => {
+    fetch("http://localhost:4000/property")
+      .then((r) => r.json())
+      .then((popular) => setproperties(popular));
+  }, []);
   return (
     <>
       <span className='page-headings'>Properties Summary</span>
