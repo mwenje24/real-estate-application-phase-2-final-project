@@ -13,10 +13,7 @@ function AddProperty() {
         size: "",
         description: "",
         status: "available",
-        bids: [],
-        image1: "",
-        image2: "",
-        image3: "",
+        image: "",
       });
 
     const navigate = useNavigate();
@@ -45,12 +42,8 @@ function AddProperty() {
         // const fileupload =  document.getElementById('formFile').files
         // const imageFile = fileupload.map((image) => (image.name))
 
-        const image1 = document.getElementById('image1').files
-        const imageFile1 = "../../assets/images/"+image1[0].name
-        const image2 = document.getElementById('image2').files
-        const imageFile2 = "../../assets/images/"+image2[0].name
-        const image3 = document.getElementById('image3').files
-        const imageFile3 = "../../assets/images/"+image3[0].name
+        const image = document.getElementById('image').files
+        const imageFile = "../../assets/images/"+image[0].name
 
 
         const newSpaces = {
@@ -64,8 +57,7 @@ function AddProperty() {
             size: formData.size,
             description: formData.description,
             status: formData.status,
-            bids: formData.bids,
-            images: [imageFile1, imageFile2, imageFile3],
+            image: imageFile,
         }
         console.log(newSpaces)
         fetch("http://localhost:4000/property", {
@@ -151,28 +143,14 @@ function AddProperty() {
                 onChange={handleChange} 
                 name="description">
             </textarea>
-            <label className="form-label">Images</label>
+            <label className="form-label">Image</label>
             <input className="form-control"
                  type="file" 
-                 value = {formData.image1}
+                 value = {formData.image}
                  onChange={handleChange} 
-                 name= 'image1'
-                 id="image1" 
+                 name= 'image'
+                 id="image" 
                  accept=".jpg, .jpeg, .png"/>
-            <input className="form-control"
-                type="file" 
-                value = {formData.image2}
-                onChange={handleChange} 
-                name= 'image2'
-                id="image2" 
-                accept=".jpg, .jpeg, .png"/>
-            <input className="form-control"
-                type="file" 
-                value = {formData.image3}
-                onChange={handleChange} 
-                name= 'image3'
-                id="image3" 
-                accept=".jpg, .jpeg, .png"/>
             <button className='btn btn-sm btn-secondary mt-3 px-5' type="submit">Submit</button>
           </div>
         </form>
