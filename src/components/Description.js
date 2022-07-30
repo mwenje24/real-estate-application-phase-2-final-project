@@ -20,6 +20,8 @@ function Description({image, ownername, transaction, charges, address, size, des
 
       let {propertyId} = useParams()
 
+      const database = "https://api.json-generator.com/templates/v1Sx1bk2enX5/data?access_token=uiaiouosskswmrymumid2f0xq6fpq3fxvlz1owwg"
+
       function handleSubmit(event) {
         event.preventDefault();
         const formBid = {
