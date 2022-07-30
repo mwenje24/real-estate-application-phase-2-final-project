@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import { useParams } from "react-router-dom";
 
-function Description({image1, image2, image3, ownername, transaction, charges, address, size, description}) {
+function Description({image, ownername, transaction, charges, address, size, description}) {
     function handleOpenForm(){
         document.getElementById("bid-form").style.display="block";
       }
@@ -96,14 +96,14 @@ function Description({image1, image2, image3, ownername, transaction, charges, a
               </form>
           </div>
           <span className='page-headings'>Space Description<button onClick={handleOpenForm} className='btn btn-sm btn-outline-secondary mb-2'>Place a Bid</button></span>
-          <div className='main-image'>
-            <img src={image1} className="card-img-top" alt="..."/>
+          <div className='main-image mt-5'>
+            <img src={image} className="card-img-top" alt="..."/>
           </div>
-          <div className='more-images mt-5 mb-4'>
+          {/* <div className='more-images mt-5 mb-4'>
             <img src={image1} className="card-img-top btn" alt="..."/>
             <img src={image2} className="card-img-top btn" alt="..."/>
             <img src={image3} className="card-img-top btn" alt="..."/>
-          </div>
+          </div> */}
           <span className='page-headings center'>More Details</span>
           <div className='space-description mt-3 mb-5'>
             <div className='row'>

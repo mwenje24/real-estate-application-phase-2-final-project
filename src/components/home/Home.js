@@ -30,7 +30,7 @@ function Home() {
         {properties.map((popular) => (
             <Cart key={popular.id} 
               link={<Link to={"/home/description/"+ popular.id} className='btn btn-sm btn-outline-secondary'>Details</Link>} 
-              image={image} 
+              image={popular.image} 
               transaction={popular.transaction} 
               address={popular.address} 
               charges={popular.charges} 

@@ -15,12 +15,7 @@ function CommercialDescription() {
   return (
     <div>
       <Description 
-      // image1={properties.images[0]}
-      // image2={properties.images[1]}
-      // image3={properties.images[2]}
-      image1={image}
-        image2={image}
-        image3={image}
+      image = {properties.image}
        ownername={properties.ownername}
        transaction={properties.transaction}
        charges={properties.charges}

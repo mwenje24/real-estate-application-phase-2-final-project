@@ -11,11 +11,7 @@
       "address": "Rickson Plaza, Muindi Mbingu Streat, Nairobi",
       "size": "80 x 90 feet",
       "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore",
-      "images": [
-        "./../assets/images/landing.jpg",
-        "../../assets/images/residential.jpg",
-        "../../assets/images/office3.jpg"
-      ],
+      "image": "https://www.inquirer.com/resizer/I_mv7u7uDJ3PrW9fToMeK77_xoY=/0x66:1637x1158/760x507/filters:format(webp)/cloudfront-us-east-1.images.arcpublishing.com/pmn/HWHUC5ANWREUNOXLWR2FVONEYI.jpg",
       "status": "available"
     },
     {
@@ -29,11 +25,7 @@
       "address": "Nairobi Metr, Karen, Nairobi",
       "size": "2.4 Acres",
       "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore",
-      "images": [
-        "../../assets/images/residential.jpg",
-        "../../assets/images/office3.jpg",
-        "../../assets/images/landing.jpg"
-      ],
+      "image": "https://www.sterlingcustomhome.com/wp-content/uploads/2019/04/11330-Dante-Circle-Littleton-large-038-17-Back-Yard-1500x1000-72dpi-min-1024x683.jpg",
       "status": "sold"
     },
     {
@@ -47,12 +39,7 @@
       "size": "2 acres",
       "description": "sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam",
       "status": "available",
-      "bids": [],
-      "images": [
-        "../../assets/images/land3.jpeg",
-        "../../assets/images/land2.jpeg",
-        "../../assets/images/house3.png"
-      ],
+      "image": "https://galaxyventuresproperties.com/wp-content/uploads/2020/01/Plot-for-sale-in-Kibabii-Bungoma-4-870x420.jpg",
       "id": 3
     }
   ],

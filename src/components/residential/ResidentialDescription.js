@@ -15,9 +15,7 @@ function ResidentialDescription() {
   return (
     <div>
       <Description 
-        image1={image}
-        image2={image}
-        image3={image}
+        image = {properties.image}
        ownername={properties.ownername}
        transaction={properties.transaction}
        charges={properties.charges}
