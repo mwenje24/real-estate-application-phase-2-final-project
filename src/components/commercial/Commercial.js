@@ -7,10 +7,12 @@ function Commercial() {
 
   const [properties, setproperties] = useState([]);
 
+  const database = "https://api.json-generator.com/templates/v1Sx1bk2enX5/data?access_token=uiaiouosskswmrymumid2f0xq6fpq3fxvlz1owwg"
+
   useEffect(() => {
-    fetch("http://localhost:4000/property")
+    fetch(database)
       .then((r) => r.json())
-      .then((popular) => setproperties(popular));
+      .then((popular) => setproperties(popular.property));
   }, []);
 
   const propertiesToDisplay = properties.filter((item) => {
