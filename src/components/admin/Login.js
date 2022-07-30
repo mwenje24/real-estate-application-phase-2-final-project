@@ -27,7 +27,7 @@ function Login() {
           </div>
 
           <div className="log-container">
-            <span className="psw">Forgot <a href="#">password?</a></span>
+            <span className="psw">Don't have an Account <a href="#">Sign Up</a></span>
           </div>
         </form>
       </div>
