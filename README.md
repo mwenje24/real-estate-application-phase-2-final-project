@@ -28,7 +28,6 @@ languages used to create this application are:
 
 to view the application in a live server the links are listed belong:
 
-
 https://mwenje24.github.io/real-estate-application-phase-2-final-project
 
 # Copyright

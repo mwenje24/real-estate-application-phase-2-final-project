@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import { Link } from 'react-router-dom'
 import image from "../../assets/images/landing.jpg"
-import Cart from '../Cart'
+import Cart from '../Cart' 
 
 
 function Home() {
